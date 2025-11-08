@@ -64,6 +64,12 @@
 <body class="bg-slate-900 text-white font-sans">
     <!-- Navigation -->
     <nav class="fixed top-0 left-0 right-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
+       <div class="flex items-center space-x-2 text-sm text-slate-300">
+          <span>🌐 Language:</span>
+          <div id="google_translate_element"></div>
+        </div>
+
+
         <div class="max-w-7xl mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
                 <div class="flex items-center space-x-3">
@@ -265,5 +271,17 @@
             </div>
         </div>
     </footer>
+
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      includedLanguages: 'en,ru,de,fr,es,zh,zh-CN,zh-TW,ja,pt,ar,tr,it,ko',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+  }
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 </body>
 </html>
